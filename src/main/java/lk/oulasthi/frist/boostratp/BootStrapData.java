@@ -9,6 +9,8 @@ import lk.oulasthi.frist.repostories.PublisherRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
+
 @Component
 public class BootStrapData implements CommandLineRunner {
 
@@ -43,6 +45,7 @@ public class BootStrapData implements CommandLineRunner {
 
         autorRepo.save(eric);
         bookRepo.save(ddd);
+
 
         Autor rod = new Autor("Rod", "Johnson");
         Book noEJB = new Book("J2EE Development without EJB", "3939459459");
